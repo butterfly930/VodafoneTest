@@ -1,0 +1,17 @@
+.header {
+    background-color: #ff4d4d; /* Red color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
