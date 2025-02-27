@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from 'react';
+import { useState } from 'react';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -6,8 +6,8 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import UserForm from './UserForm';
-import usersData from '../data/db.json';
+import UserForm from './Components/UserForm';
+import usersData from '.../data/db.json';
 
 interface User {
   id: number;
@@ -88,10 +88,11 @@ const UserTable: React.FC = () => {
                     </TableCell>
                   ))}
                   <TableCell>
-                    <button className="edit" onClick={() => handleEdit(user)}>
+                    <button className="edit" onClick={() => handleEdit(user)}>Edit
                       <i className="fas fa-edit"></i>
                     </button>
-                    <button className="delete">
+
+                    <button className="delete">Delete
                       <i className="fas fa-trash"></i>
                     </button>
                   </TableCell>

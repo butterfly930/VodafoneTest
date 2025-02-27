@@ -1,10 +1,11 @@
 import React from 'react';
-import UserTable from './UserTable';
+import Header from '../Components/Header';
+import UserTable from '../UserTable';
 
 const App = () => {
   return (
     <div>
-      <h1>Vodafone</h1>
+      < Header />
       <UserTable />
     </div>
   );
